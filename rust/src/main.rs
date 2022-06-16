@@ -12,7 +12,9 @@ async fn main() {
         .or(filters::update_sim(db.clone()))
         .or(filters::delete_sim(db.clone()));
 
-    println!("Warp 7, Engage!");
+
+    println!("Warp 10, Engage!");
+
     warp::serve(routes)
         .run(([0, 0, 0, 0], 3030))
         .await;
